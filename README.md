@@ -1,41 +1,27 @@
-<<<<<<< HEAD
-# idea-forge
-A full-stack Next.js app that leverages AI to generate unique, technically plausible project ideas , and then turns them into a concrete, buildable plan.
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Idea Forge 
 
-## Getting Started
+Idea Forge is a full-stack Next.js app that helps you generate **unique, technically plausible project ideas**, and then turns them into a concrete, buildable plan.
 
-First, run the development server:
+Instead of spitting out yet another “to-do app” or “smart door lock,” it will:
+- Fuses together multiple technical domains
+- Injects constraints (offline-only, low BOM cost, no cameras, etc.)
+- Asks an LLM to propose several candidate ideas in a strict JSON format
+- Checks the web for similar products/projects to estimate novelty
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Once you like an idea, you can hit **“Plan this project”** to get:
+- A rough **timeframe** (weeks + intensity)
+- Required **technical knowledge** and topics to learn
+- A high-level **budget estimate**
+- **Funding ideas** (grants, labs, clubs, etc.)
+- **Alternative solutions** that exist today
+- Concrete **problems it solves** / use cases
+- Key **risks & gotchas**
+- A set of **chronological milestones** you can follow like a mini roadmap
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 8d5b112 (Initial commit from Create Next App)
+Future features
+- Next.js (App Router)
+- A small novelty engine powered by an LLM (no database required)
+- A modern dark UI with interactive idea cards and a project planner panel
+- PostgreSQL + Prisma for storing ideas and domains/primitives
+- Tavily (or another search provider) to check for similar work
+- API endpoints for generating, storing, and browsing ideas over time
